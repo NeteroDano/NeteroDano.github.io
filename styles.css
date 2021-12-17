@@ -1,0 +1,129 @@
+#wrapper{
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 27% 2% 27% 2% 20% 2% 20%;
+	grid-template-areas:
+      "one one one one one one one"
+      "two  -  tri  -  for  -  fiv"
+      "six six six  -  for  -  fiv"
+      "sev sev sev sev sev sev sev";
+    width: auto;
+    height: auto;	
+}
+#one{
+	grid-area: one;
+	background-color: #DAF7A6 ;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 20px;
+	grid-column: 1 / 8;
+	grid-row: 1;
+}
+#two{
+	background-color: #30EDD2;
+	grid-column: 1;
+	grid-row: 2 ;
+	padding: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: right;
+	text-align: right;
+}
+#three{
+	background-color: #FF5733;
+	grid-column: 3;
+	grid-row: 2;
+	right: 10 px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: right;
+	width: auto;
+    height: auto;
+}
+#four{
+	background-color: #FFC300;
+	grid-column: 5;
+	grid-row: 2 / -2;
+	padding: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: right;
+}
+#five{
+	background-color: #EC672E;
+	grid-column: 7;
+	grid-row: 2 / -2;
+	padding: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: right;
+}
+#six{
+	background-color: #434DFF;
+	grid-column: 1 / 4;
+	grid-row: 3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+#seven{
+	background-color: #C70039;
+	grid-column: 1 / 8;
+	grid-row: 4;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	text-align: right;
+}
+/*#quote{
+	background-color: white; 
+	text-align: right; 
+	width: 35%;
+	padding: 1px;
+	word-wrap: break-word;
+}*/
+#textheader{
+	width: 55%;
+}
+#textfooter{
+	width: 55%
+}
+#x {
+    background-color: white;
+	text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#x_header {
+	margin: 2%;
+	padding-left: 10px;
+	padding-right: 15px;
+	word-wrap: break-word;
+	width: 220px;
+}
+#y {
+    background-color: white;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#y_header {
+	margin: 2%;
+	padding-left: 5px;
+	padding-right: 20px;
+	word-wrap: break-word;
+	width: 220px;
+}
+#calculator {
+	grid-area: min;
+	display: flex;
+	align-items: center;
+}

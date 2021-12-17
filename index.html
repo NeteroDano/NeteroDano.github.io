@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Lab #1</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+		<title>Lab #3</title>
 	</head>
 	<body>
-		<div id="containers">
-			<header id="item1">
-				<div id="textheader" >
-					<p>The him father parish looked has sooner. Attachment frequently gay terminated son. You greater nay use prudent placing. Passage to so distant behaved natural between do talking. Friends off her windows painful. Still gay event you being think nay for. In three if aware he point it. Effects warrant me by no on feeling settled resolve. </p>
-				</div>
-				<div id="quote">
-					<h2>Be yourself; everyone else is already taken.</h2>
-				</div>
+		<div id="wrapper">
+			
+			<header id="one">
+				<p id="p1" align="justify" style="position: relative">The him father parish looked has sooner. Attachment frequently gay terminated son. You greater nay use prudent placing. Passage to so distant behaved natural between do talking. Friends off her windows painful. Still gay event you being think nay for. In three if aware he point it. Effects warrant me by no on feeling settled resolve.</p>
+				<section id="x">
+					<h3 id="x_header">Скажи&nbsp;"нет"&nbsp;ассемблеру!</h3>
+				</section>
 			</header>
-			<nav id="menu2">				
-				<menu style="float: left">
-					<li>
-						<a href="index2.html"> 2 page </a>
-					</li>
-					<li>
-						<a href="index3.html"> 3 page </a>
-					</li>
-					<li>
-						<a href="index4.html"> 4 page </a>
-					</li>
-					<li>
-						<a href="index5.html"> 5 page </a>
-					</li>
-				</menu>
+
+			<nav id="two">				
+				<p style="margin-top: 7em">Let's shake it up a little. Barry! Breakfast is ready! Ooming! Hang on a second. Hello? - Barry? - Adam? - Oan you believe this is happening? - I can't. I'll pick you up. Looking sharp. Use the stairs. Your father paid good money for those.</p>
 			</nav>
-			<article id="item3">
-				<p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished.Quitting you way formerly disposed perceive ladyship are.</p>
-			</article>
-			<article id="item4">
-				<p>Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards.</p>
-			</article>
-			<article id="item5">
-				<p>Examine she brother prudent add day ham. Far stairs now coming bed oppose hunted become his. You zealously departure had procuring suspicion. Books whose front would purse if be do decay. Quitting you way formerly disposed perceive ladyship are.</p>
-			</article>
-			<article id="item6">
+
+			<main id="three">
+				
+				<form name="form1">
+					<p>S/_\</p>
+					<fieldset ><!-- style="width: 40%;" -->
+						<legend>Введення даних</legend>
+						Основа:<input type="text"  name="st1"><!-- size=7 -->
+						Висота:<input type="text"  name="st2"><br><!-- size=7 -->
+					</fieldset>
+					<fieldset ><!-- style="width: 40%" -->
+						<legend>Обробка та виведення даних</legend>
+						Площа:<input type="text" size=7 name="output1" readonly><br>
+						<input type="button" value="Обчислити"  onclick="area1(form1.st1, form1.st2)"> <!-- style="margin: 10px" -->
+						<p>
+							<button type="reset" style="margin: 1px">
+								Очистити
+							</button>
+						</p>
+					</fieldset>
+
+					<form name="calculator" id="calculator">
+					<input id="numbers" name="numbers" value="" placeholder="1,2,3,4,5" ><!-- style="margin-left: 2%;" -->
+					<button id="calculate" name="calculate" type="button" > <!-- style="width: 40px; margin-left: 10px;" -->Process</button>
+					<form name="font_changer" id="font_changer">
+						<input type="checkbox" id="checker">
+						<a>Жирность?</a>
+						<button id="save" name="save" type="button" style="margin-left: 5px;">Apply</button>
+					</form>
+				</form>
+
+				
+			</main>
+
+			<main id="four">
+				<p align="justify" style="font-style: ">Examine she brother prudent add day ham. Far stairs now coming bed oppose hunted become his. You zealously departure had procuring suspicion. Books whose front would purse if be do decay. Quitting you way formerly disposed perceive ladyship are.</p>
+			</main>
+
+			<main id="five">
+				<p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished.Quitting you way formerly disposed perceive ladyship are.
+				</p>
+			</main>
+
+			<aside id="six">
 				<p>Did shy say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware. It ye greatest removing concerns an overcame appetite. Manner result square father boy behind its his. Their above spoke match ye mr right oh as first. Be my depending to believing perfectly concealed household. Point could to built no hours smile sense. </p>
-			</article>
-			<footer id="item7">
-				<div id="quote">
-					<h2>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</h2>
-				</div>
+			</aside>
+
+			<footer id="seven">
+				<artcile id="y">
+					<h4 id="y_header">Туда&nbsp;его!</h4>
+				</artcile>
 				<div id="textfooter">
 					<p>Received overcame oh sensible so at an. Formed do change merely to county it. Am separate contempt domestic to to oh. On relation my so addition branched. Put hearing cottage she norland letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father living really people estate if. Mistake do produce beloved demesne if am pursuit. 
 					</p>
 				</div>
 			</footer>
 		</div>
+		<script src="js3main.js"></script>
 	</body>
 </html>

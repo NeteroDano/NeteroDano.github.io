@@ -1,6 +1,6 @@
 // Задание 1
-const blockX = document.getElementById('x_header');
-const blockY = document.getElementById('y_header');
+const blockX = document.getElementById('p1');
+const blockY = document.getElementById('p2');
 
 function swapBlockInfo (block1, block2) {
     let tmp = block2.textContent
@@ -8,13 +8,15 @@ function swapBlockInfo (block1, block2) {
     block1.textContent = tmp
 }
 
-blockX.onclick = swapBlockInfo(blockX,blockY)
-blockY.onclick = swapBlockInfo(blockX,blockY)
+blockX.onclick = () => swapBlockInfo(blockX,blockY)
+blockY.onclick = () => swapBlockInfo(blockX,blockY)
+
 
 // Задание 2
 function area1 (a,h){
 	form1.output1.value=(a.value*h.value)/2;
 }
+
 // Задание 3
 document.getElementById('calculate').onclick = () => findMin();
 if (document.cookie) hasCookies();

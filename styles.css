@@ -1,6 +1,6 @@
 #wrapper{
 	display: grid;
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: 150px 700px 100px 150px;
 	grid-template-columns: 27% 2% 27% 2% 20% 2% 20%;
 	grid-template-areas:
       "one one one one one one one"
@@ -35,10 +35,8 @@
 	background-color: #FF5733;
 	grid-column: 3;
 	grid-row: 2;
-	right: 10 px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+/*	align-items: center;*/
+/*	justify-content: flex-start;*/
 	text-align: right;
 	width: auto;
     height: auto;
@@ -82,13 +80,6 @@
 	padding: 20px;
 	text-align: right;
 }
-/*#quote{
-	background-color: white; 
-	text-align: right; 
-	width: 35%;
-	padding: 1px;
-	word-wrap: break-word;
-}*/
 #textheader{
 	width: 55%;
 }
@@ -121,9 +112,4 @@
 	padding-right: 20px;
 	word-wrap: break-word;
 	width: 220px;
-}
-#calculator {
-	grid-area: min;
-	display: flex;
-	align-items: center;
 }

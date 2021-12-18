@@ -1,11 +1,3 @@
-document.write(document.getElementById('p1').innerHTML);
-if (document.getElementById && document.getElementsByTagName) {
- // якщо методи getElementById та getElementsByTagName існують,
- // то підтримка W3C DOM є.
- obj = document.getElementById("navigation")
- // тому тут використовуємо можливості W3C DOM.
- // .....
-}
 // Задание 1
 const blockX = document.getElementById('x_header');
 const blockY = document.getElementById('y_header');

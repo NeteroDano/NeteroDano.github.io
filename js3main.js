@@ -57,8 +57,8 @@ function hasCookies() {
     if (confirm(document.cookie + "\n" + "Save?")) {
         alert("Cookies are saved");
         let form = document.forms.calculator;   // <form name="calculator"> element
-        form.elements.numbers.style.visibility = 'hidden'
-        form.elements.calculate.style.visibility = 'hidden'
+        //form.elements.numbers.style.visibility = 'hidden';
+        //form.elements.calculate.style.visibility = 'hidden'
         // form.elements.numbers.remove()
         // form.elements.calculate.remove()
     } else {

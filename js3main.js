@@ -4,6 +4,7 @@ function setCookie(){
 function getCookie(){
 	alert(document.cookie);
 }
+setCookie();
 /*
 // Задание 1
 const blockX = document.getElementById('p1');

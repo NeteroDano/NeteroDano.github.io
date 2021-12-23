@@ -22,12 +22,12 @@ function swapBlockInfo (block1, block2) {
 blockX.onclick = () => swapBlockInfo(blockX,blockY)
 blockY.onclick = () => swapBlockInfo(blockX,blockY)
 
-/*
+
 // Задание 2
 function area1 (a,h){
 	form1.output1.value=(a.value*h.value)/2;
 }
-
+/*
 // Задание 3
 document.getElementById('calculate').onclick = () => findMin();
 if (document.cookie) hasCookies();

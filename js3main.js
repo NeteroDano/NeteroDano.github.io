@@ -153,6 +153,6 @@ function addField(textString) {
     index++
 }
 // збереження даних
-localStorage.setItem('check', 1);
+sessionStorage.setItem('check', 1);
 // після ребута
-alert( localStorage.getItem('check') ); // 1
+alert( sessionStorage.getItem('check') ); // 1

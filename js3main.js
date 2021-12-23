@@ -1,6 +1,6 @@
-sessionStorage.setItem("data", "All the Best");
+localStorage.setItem("data", "All the Best");
 
-var newdata=sessionStorage.getItem('data');
+var newdata=localStorage.getItem('data');
 alert(newdata);
 /*
 function setCookie(){

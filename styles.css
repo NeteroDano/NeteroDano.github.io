@@ -80,6 +80,7 @@
 	padding: 20px;
 	text-align: right;
 }
+
 #textheader{
 	width: 55%;
 }
@@ -113,3 +114,8 @@
 	word-wrap: break-word;
 	width: 220px;
 }
+/*#calculator {
+	grid-area: min;
+	display: flex;
+	align-items: center;
+}*/

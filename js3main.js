@@ -1,3 +1,7 @@
+sessionStorage.setItem("data", "All the Best");
+
+var newdata=sessionStorage.getItem('data');
+alert(newdata);
 /*
 function setCookie(){
 	document.cookie = "username=John Doe";
@@ -152,7 +156,3 @@ function addField(textString) {
     }
     index++
 }
-// збереження даних
-sessionStorage.setItem('check', 1);
-// після ребута
-alert( sessionStorage.getItem('check') ); // 1

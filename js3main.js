@@ -152,4 +152,5 @@ function addField(textString) {
     }
     index++
 }
-
+sessionStorage.user = {name: "Basil"};
+alert(sessionStorage.user); // [object Object]

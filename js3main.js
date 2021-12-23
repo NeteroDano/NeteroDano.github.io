@@ -27,7 +27,7 @@ blockY.onclick = () => swapBlockInfo(blockX,blockY)
 function area1 (a,h){
 	form1.output1.value=(a.value*h.value)/2;
 }
-/*
+
 // Задание 3
 document.getElementById('calculate').onclick = () => findMin();
 if (document.cookie) hasCookies();
@@ -73,7 +73,7 @@ function hasCookies() {
     }
 }
 
-
+/*
 // Задание 4
 document.getElementsByTagName('body')[0].onload = () => {
 

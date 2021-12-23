@@ -1,8 +1,3 @@
-function setCookie(){
-	document.cookie = "info=123"
-	
-}
-setCookie();
 // Задание 1
 const blockX = document.getElementById('p1');
 const blockY = document.getElementById('p2');

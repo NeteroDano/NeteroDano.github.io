@@ -152,5 +152,7 @@ function addField(textString) {
     }
     index++
 }
-sessionStorage.user = {name: "Basil"};
-alert(sessionStorage.user); // [object Object]
+// збереження даних
+localStorage.setItem('check', 1);
+// після ребута
+alert( localStorage.getItem('check') ); // 1

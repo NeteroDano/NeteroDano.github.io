@@ -1,3 +1,4 @@
+/*
 function setCookie(){
 	document.cookie = "username=John Doe";
 }
@@ -6,7 +7,8 @@ function getCookie(){
 }
 setCookie();
 getCookie();
-/*
+*/
+
 // Задание 1
 const blockX = document.getElementById('p1');
 const blockY = document.getElementById('p2');
@@ -20,7 +22,7 @@ function swapBlockInfo (block1, block2) {
 blockX.onclick = () => swapBlockInfo(blockX,blockY)
 blockY.onclick = () => swapBlockInfo(blockX,blockY)
 
-
+/*
 // Задание 2
 function area1 (a,h){
 	form1.output1.value=(a.value*h.value)/2;

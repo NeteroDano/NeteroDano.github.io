@@ -147,7 +147,6 @@ function addField(textString) {
     index++
 }
 */
-
 function setCookie(){
 	document.cookie = "info=123"
 }

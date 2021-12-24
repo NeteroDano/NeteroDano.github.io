@@ -120,7 +120,7 @@ document.getElementById("numbers").addEventListener('focus', event => {
     document.getElementById('six').style.fontWeight = 'bold'
 } )
 
-
+/*
 // Задание 5
 let newForm = document.createElement('form')
 newForm.innerHTML =
@@ -156,3 +156,4 @@ function addField(textString) {
     }
     index++
 }
+*/

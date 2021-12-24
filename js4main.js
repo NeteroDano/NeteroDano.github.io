@@ -12,3 +12,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+localStorage.setItem(window.innerHeight);
+let myName = localStorage.getItem('name');
+myName

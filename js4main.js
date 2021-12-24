@@ -12,10 +12,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-const btn = document.querySelector('button');
-btn.addEventListener('click', () => {
-  alert('You clicked me!');
-   let pElem = document.createElement('p');
-  	pElem.textContent = 'This is a newly-added paragraph.';
-  	document.body.appendChild(pElem);
-});

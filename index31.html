@@ -65,9 +65,12 @@
 				<button>Click for storage data</button>
 				</div>
 				<script>
+				const btn3 = document.getElementById('Click2');
+    				btn3.addEventListener('click', () => {
 					localStorage.setItem("data", window.innerHeight);
 					var newdata2=localStorage.getItem(window.innerHeight);
-					alert(newdata2);	
+					alert(newdata2);
+				});
 				</script>
 				
 			</main>

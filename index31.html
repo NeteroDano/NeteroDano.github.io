@@ -61,17 +61,24 @@
     				});
     				</script>
 				
+				<script>
+  					elem.onclick = function() {
+    					alert(newdata);
+  					};
+				</script>
 				<div id="Click2">
+				<input type="button" onclick="elem" value="Click for storage data">
 				<button>Click for storage data</button>
 				</div>
+				
 				<script>
-				const btn3 = document.getElementById('Click2');
-    				btn3.addEventListener('click', () => {
-					localStorage.setItem("data", window.innerHeight);
-					var newdata2=localStorage.getItem(window.innerHeight);
-					alert(newdata2);
-				});
+  				function countRabbits() {
+    					var newdata1=localStorage.getItem(window.innerHeight);
+					alert(newdata1);
+    					
+  				}
 				</script>
+				<input type="button" onclick="countRabbits()" value="Считать кроликов!">
 				
 			</main>
 

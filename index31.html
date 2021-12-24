@@ -44,7 +44,6 @@
 				<button>Click me</button>
 				</div>
 				<script>
-				
     				const btn2 = document.getElementById('Click');
     				btn2.addEventListener('click', () => {
       					alert('You clicked me!');
@@ -60,16 +59,17 @@
 				// localStorage.clear();
 				alert(newdata);
     				});
-				
-				
     				</script>
 				
 				<div id="Click2">
 				<button>Click for storage data</button>
 				</div>
 				<script>
+					localStorage.setItem("data", window.innerHeight);
+					var newdata=localStorage.getItem(window.innerHeight);
 					alert(newdata);	
 				</script>
+				
 			</main>
 
 			<main id="four">

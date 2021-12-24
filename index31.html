@@ -63,9 +63,8 @@
 
 				<script>
   				function countRabbits() {
-    					var newdata1=localStorage.getItem(window.innerHeight);
-					alert(newdata1);
-    					
+    					var name=localStorage.getItem(window.innerHeight).value;
+					alert("Привет " + name + "!");
   				}
 				</script>
 				<input type="button" onclick="countRabbits()" value="Считать кроликов!">

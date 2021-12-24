@@ -39,6 +39,13 @@
 				<div class="content">
   					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
+				btn.addEventListener('click', () => {
+  				 alert('You clicked me!');
+
+  				 let pElem = document.createElement('p');
+  				 pElem.textContent = 'This is a newly-added paragraph.';
+  				 document.body.appendChild(pElem);
+				});
 			</main>
 
 			<main id="four">

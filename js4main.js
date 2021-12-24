@@ -12,7 +12,9 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+/*
 localStorage.setItem("data", window.innerHeight);
 
 var newdata=localStorage.getItem(window.innerHeight);
 alert(newdata);
+*/

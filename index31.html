@@ -53,12 +53,13 @@
       					pElem.textContent = 'This is a newly-added paragraph.';
       					document.body.appendChild(pElem);
 				*/
+				localStorage.setItem("data", window.innerHeight);
+
+				var newdata=localStorage.getItem(window.innerHeight);
+				alert(newdata);
     				});
 				
-					localStorage.setItem("data", window.innerHeight);
-
-					var newdata=localStorage.getItem(window.innerHeight);
-					alert(newdata);
+					
     				</script>
 			</main>
 

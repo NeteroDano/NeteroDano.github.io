@@ -1,20 +1,3 @@
-/*
-localStorage.setItem("data", "All the Best");
-
-var newdata=localStorage.getItem('data');
-alert(newdata);
-*/
-/*
-function setCookie(){
-	document.cookie = "username=John Doe";
-}
-function getCookie(){
-	alert(document.cookie);
-}
-setCookie();
-getCookie();
-*/
-
 // Задание 1
 const blockX = document.getElementById('p1');
 const blockY = document.getElementById('p2');
@@ -35,50 +18,43 @@ function area1 (a,h){
 }
 
 // Задание 3
-document.getElementById('calculate').onclick = () => findMin();
-if (document.cookie) hasCookies();
+button2.addEventListener("click", () => {
+    const numbers = inner.value.split(" ")
+    let max = parseInt(numbers[0])
+    let count = 0
+    for (let i = 0; i <= numbers.length; i++) {
+        
+        if(parseInt(numbers[i]) > max){
+            count = 1
+            max = parseInt(numbers[i])
+            continue
+        }
+        
+        if(parseInt(numbers[i]) == max) {
+            count++
+        }
 
-function findMin() {
-    let form = document.forms.calculator;   // <form name="calculator"> element
-    let elem = form.elements.numbers;       // <input name="numbers"> element
-    let arr = elem.value.split(",").map(Number);
-    let minNumber = Number.MAX_VALUE
-    let maxNumber = 0
-    
-    for (i = 0; i < arr.length;i++) {       
-        if (arr[i] < minNumber) minNumber=arr[i]
-        if (arr[i] > maxNumber) maxNumber=arr[i]
     }
+    alert(count)
+    document.cookie = "count=" + count
+})
+
+for (let i = 0;i<cookie.length; i++) {
     
-    alert(
-        "Min: " + minNumber +"\n"+
-        "Max: " + maxNumber
-    );
-
-    document.cookie = "Min=" + minNumber.toString();
-    document.cookie = "Max=" + maxNumber.toString();
-}
-
-function hasCookies() {
-    if (confirm(document.cookie + "\n" + "Save?")) {
-        alert("Cookies are saved");
-        let form = document.forms.calculator;   // <form name="calculator"> element
-        //form.elements.numbers.style.visibility = 'hidden';
-        //form.elements.calculate.style.visibility = 'hidden'
-        // form.elements.numbers.remove()
-        // form.elements.calculate.remove()
-    } else {
-        let cookies = document.cookie.split(";");
-        for (let i = 0; i < cookies.length; i++) {
-            let cookie = cookies[i];
-            let eqPos = cookie.indexOf("=");
-            let name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
-            document.cookie = name + '=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    if (cookie[i].split("=")[0].trim() == "count") {
+        if(cookie[i].split("=")[1] != "0") {
+            form.setAttribute("style", "display:none")
+            const save = confirm(cookie[i] + ". Видалити результат?")
+            if(!save) {
+                alert("У вас знайдені куки, перезавантажте сторінку")
+            }
+            else {
+                document.cookie = "count=0"
+                window.location.reload()
+            }
         }
     }
 }
-
 
 // Задание 4
 document.getElementsByTagName('body')[0].onload = () => {

@@ -159,43 +159,8 @@ document.getElementById("numbers").addEventListener("focus", (event) => {
   document.getElementById("six").style.fontWeight = "bold";
 });
 
-/*
+
 // Задание 5
-let newForm = document.createElement('form')
-newForm.innerHTML =
-    '<br> String: <input id="string_text"> <br>'+
-    '<button id="save" type="button">Apply</button>'
-let table = document.createElement('table')
-document.getElementById('three').append(table)
-
-let honka = document.getElementById('honka');
-honka.onclick = () => document.getElementById('two').append(newForm)
-
-newForm[1].onclick = () => {
-    const textString = newForm[0].value;
-    addField(textString)
-}
-
-index = 0
-function addField(textString) {
-    let row = table.insertRow(index)
-    let cell = row.insertCell(0)
-
-    let textField = document.createTextNode(textString)
-    cell.appendChild(textField)
-
-    let saveButton = document.createElement('button')
-    cell.appendChild(saveButton)
-    saveButton.textContent = 'Save'
-    saveButton.style.marginTop = '5px'
-    saveButton.onclick = () => {
-        const hist = '$'+ textString
-        let dumpy = localStorage.getItem('text') + hist
-        localStorage.setItem('text',dumpy);
-    }
-    index++
-}
-*/
 
 function CookiesDelete() {
   let cookies = document.cookie.split(";");
@@ -216,7 +181,7 @@ calculate.addEventListener("click", handlerCalc);
 function handlerCalc(e) {
   console.dir(numbers.value);
   const arr = numbers.value.split(",").map((el) => Number(el));
-  const maxValue = Math.max(...arr);
+  const maxValue = arr.filter((v) => v == Math.max(...arr)).length;
   alert(maxValue);
   document.cookie = `value=${maxValue}`;
   alert("Збережено в куки");

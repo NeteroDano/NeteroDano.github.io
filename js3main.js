@@ -190,7 +190,7 @@ let data = document.cookie;
 
 if (data) {
   const maxValue = data.split("=")[1];
-  alert(`максимальне значення${maxValue}`);
+  alert(`Кількість максимальних значень${maxValue}`);
   calculator.style.display = "none";
   alert(
     `куки видаляться після натиснення кнопки ОК та перезавантажеться сторінка`

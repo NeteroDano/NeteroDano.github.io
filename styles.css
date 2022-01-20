@@ -56,10 +56,10 @@
 	grid-column: 7;
 	grid-row: 2 / -2;
 	padding: 2px;
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	text-align: right;
+	justify-content: flex-start; */
+	/* text-align: right; */
 }
 #six{
 	background-color: #434DFF;
